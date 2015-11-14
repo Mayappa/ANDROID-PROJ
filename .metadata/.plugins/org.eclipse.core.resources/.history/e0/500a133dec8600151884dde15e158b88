@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFDD00"
+    tools:context=".MainActivity" >
+    
+    
+
+    <EditText
+        android:id="@+id/editTextinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="69dp"
+        android:ems="10"
+        android:hint="Input Message" />
+
+    <Button
+        android:id="@+id/buttoncolordisplayred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewoutput"
+        android:layout_marginTop="75dp"
+        android:text="ColorRed" />
+
+    <Button
+        android:id="@+id/buttoncolordispalyblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttoncolordisplayred"
+        android:layout_alignBottom="@+id/buttoncolordisplayred"
+        android:layout_alignRight="@+id/editTextinput"
+        android:text="ColorBlue" />
+
+    <Button
+        android:id="@+id/buttondisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextinput"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@+id/buttoncolordispalyblue"
+        android:onClick="displaymessage"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/textViewoutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextinput"
+        android:layout_below="@+id/buttondisplay"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="41dp"
+        android:text="No Message"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

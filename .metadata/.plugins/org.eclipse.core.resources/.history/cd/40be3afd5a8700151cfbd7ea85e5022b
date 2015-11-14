@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#33FF99"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextusername"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="89dp"
+        android:textColor="#33FF66"
+       
+       android:text="LOGIN" />
+
+    <EditText
+        android:id="@+id/editTextpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginbutton"
+        android:layout_alignLeft="@+id/loginbutton"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+       android:textColor="#00FFFF" 
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/cancelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/loginbutton"
+        android:layout_alignBottom="@+id/loginbutton"
+        android:layout_alignRight="@+id/editTextusername"
+        android:textColor="#ff0000"
+        android:text="CANCEL" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextusername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:text="LOGIN PAGE"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF0099" />
+
+    <EditText
+        android:id="@+id/editTextusername"
+        style="Arial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="datetime|text"
+        android:textColor="#00FFFF" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginbutton"
+        android:layout_below="@+id/cancelbutton"
+        android:layout_marginTop="29dp"
+        android:text="Forget Password?"
+        android:textColor="#cc3300" 
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="Click" />
+
+</RelativeLayout>
